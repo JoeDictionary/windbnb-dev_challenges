@@ -8,9 +8,18 @@
   font-family: "Montserrat";
 }
 
+:host {
+  display: inline-block;
+  min-width: 300px;
+  width: 50%;
+  // height: auto;
+}
+
 .card {
-  box-sizing: border-box;
   display: inline-flex;
+  width: 100%;
+  // TODO Height auto or 100% or something else?
+  height: auto;
   // border-radius: 12px;
   // box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
@@ -22,7 +31,8 @@
 }
 
 .img-wrapper {
-  max-width: 400px;
+  width: 100%;
+  height: auto;
   border-radius: 24px;
 }
 
