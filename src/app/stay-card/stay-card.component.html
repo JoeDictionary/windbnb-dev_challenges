@@ -1,12 +1,24 @@
-<div>
-  <div id="img-wrapper">
-    <img src="" alt="" />
-  </div>
+<div class="card">
+  <div class="card-content">
+    <div class="img-wrapper">
+      <img [src]="data.photo" alt="" />
+    </div>
 
-  <div id="info">
-    <p id="type"></p>
-    <div *ngIf="superhost" class="superhost">Superhost</div>
-    <div id="rating"></div>
-    <p id="title"></p>
+    <div class="info">
+      <div class="first-line">
+        <div *ngIf="data.superHost" class="superhost">Superhost</div>
+        <p class="type">{{ data.type }}</p>
+        <div class="rating">
+          <span
+            ><img
+              class="star-icon"
+              src="../../assets/star.svg"
+              alt="star rating"
+          /></span>
+          {{ data.rating }}
+        </div>
+      </div>
+      <p class="title">{{ data.title }}</p>
+    </div>
   </div>
 </div>
