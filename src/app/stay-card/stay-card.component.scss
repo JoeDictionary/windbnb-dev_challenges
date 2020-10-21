@@ -9,9 +9,8 @@
 }
 
 :host {
-  display: inline-block;
   min-width: 300px;
-  width: 50%;
+  width: 10%;
   // height: auto;
 }
 
@@ -40,6 +39,10 @@ img {
   width: 100%;
   height: auto;
   border-radius: inherit;
+}
+
+.info {
+  max-width: 100%;
 }
 
 .first-line {
@@ -75,6 +78,11 @@ img {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
+
+  // max-width: 300px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .rating {
