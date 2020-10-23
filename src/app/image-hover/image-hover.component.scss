@@ -1,0 +1,69 @@
+.all-container {
+  // position: relative;
+  display: inline-block;
+  border-radius: inherit;
+}
+
+.image-container {
+  position: relative;
+  border-radius: inherit;
+  // TODO
+  display: inline-block;
+}
+
+// https://stackoverflow.com/questions/41251107/css-image-overlay-not-working
+
+:host ::ng-deep img {
+  border-radius: inherit;
+  margin: 0 !important;
+  padding: 0 !important;
+  // TODO
+  display: inline-block;
+
+  // Nedded
+  vertical-align: middle;
+}
+
+.overlay-container {
+  display: inline;
+}
+
+.image-overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  top: 0;
+  left: 0;
+  // right: 0;
+  // bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.25s;
+  cursor: pointer;
+}
+
+.image-overlay ::ng-deep > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+  padding: 10px;
+}
+
+.image-overlay:hover {
+  opacity: 1;
+}
+
+.image-overlay:hover ::ng-deep > * {
+  transform: translateY(0px);
+  user-select: none;
+}
+
+.image-overlay-blur {
+  backdrop-filter: blur(3px);
+}

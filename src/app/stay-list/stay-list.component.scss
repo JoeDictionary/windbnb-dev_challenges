@@ -1,0 +1,19 @@
+:host {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  column-count: 3;
+}
+
+// https://silvawebdesigns.com/create-responsive-pinterest-style-layout-css/
+.stay-list {
+  // display: inline-block;
+  column-count: inherit;
+  column-fill: auto;
+  overflow: hidden;
+  // margin: 0 auto;
+}
+
+.stay-card {
+  padding: 30px;
+}

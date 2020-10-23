@@ -1,4 +1,16 @@
-stay-card {
-  display: inline-block;
-  // min-width: 50%;
+stay-list {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  column-count: 3;
+}
+
+// REVIEW TEMPORARY
+img {
+  width: 400px;
+  height: auto;
+  margin: 30% 30%;
+}
+
+@media screen and (max-width: 1200px) {
 }
