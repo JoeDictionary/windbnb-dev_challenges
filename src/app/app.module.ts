@@ -1,4 +1,4 @@
-// import { ImageHoverComponent } from './image-hover/image-hover.component';
+import { ImageHoverComponent } from './image-hover/image-hover.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
@@ -15,7 +15,7 @@ import { HoverEffectComponent } from './hover-effect/hover-effect.component';
     StayCardComponent,
     StayListComponent,
     HoverEffectComponent,
-    // ImageHoverComponent,
+    ImageHoverComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
