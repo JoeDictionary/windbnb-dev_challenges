@@ -1,0 +1,9 @@
+<button
+  class="outline"
+  (focus)="isFocused = true"
+  (blur)="isFocused = false"
+  [@inOut]="isFocused"
+>
+  <mat-icon>search</mat-icon>
+  <div class="expand-text">Search</div>
+</button>

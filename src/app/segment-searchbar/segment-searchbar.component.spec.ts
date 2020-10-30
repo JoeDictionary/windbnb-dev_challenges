@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HoverEffectComponent } from './hover-effect.component';
+import { SegmentSearchbarComponent } from './segment-searchbar.component';
 
-describe('HoverEffectComponent', () => {
-  let component: HoverEffectComponent;
-  let fixture: ComponentFixture<HoverEffectComponent>;
+describe('SegmentSearchbarComponent', () => {
+  let component: SegmentSearchbarComponent;
+  let fixture: ComponentFixture<SegmentSearchbarComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HoverEffectComponent ]
+      declarations: [ SegmentSearchbarComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HoverEffectComponent);
+    fixture = TestBed.createComponent(SegmentSearchbarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

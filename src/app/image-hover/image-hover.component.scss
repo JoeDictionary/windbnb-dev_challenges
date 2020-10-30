@@ -11,21 +11,19 @@
   display: inline-block;
 }
 
-// https://stackoverflow.com/questions/41251107/css-image-overlay-not-working
+:host {
+  display: inline-block;
+}
 
+// https://stackoverflow.com/questions/41251107/css-image-overlay-not-working
 :host ::ng-deep img {
+  // TODO
+  display: inline-block;
   border-radius: inherit;
   margin: 0 !important;
   padding: 0 !important;
-  // TODO
-  display: inline-block;
-
   // Nedded
-  vertical-align: middle;
-}
-
-.overlay-container {
-  display: inline;
+  vertical-align: top;
 }
 
 .image-overlay {
@@ -50,9 +48,9 @@
 }
 
 .image-overlay ::ng-deep > * {
-  transform: translateY(20px);
-  transition: transform 0.25s;
-  padding: 10px;
+  // transform: translateY(20px);
+  // transition: transform 0.25s;
+  // padding: 10px;
 }
 
 .image-overlay:hover {
@@ -60,8 +58,8 @@
 }
 
 .image-overlay:hover ::ng-deep > * {
-  transform: translateY(0px);
-  user-select: none;
+  // transform: translateY(0px);
+  // user-select: none;
 }
 
 .image-overlay-blur {

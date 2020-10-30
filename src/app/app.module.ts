@@ -7,17 +7,28 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StayCardComponent } from './stay-card/stay-card.component';
 import { StayListComponent } from './stay-list/stay-list.component';
-import { HoverEffectComponent } from './hover-effect/hover-effect.component';
+import { SegmentSearchbarComponent } from './segment-searchbar/segment-searchbar.component';
+
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { ExpandButtonComponent } from './expand-button/expand-button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StayCardComponent,
     StayListComponent,
-    HoverEffectComponent,
     ImageHoverComponent,
+    SegmentSearchbarComponent,
+    ExpandButtonComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatIconModule,
+    MatButtonModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

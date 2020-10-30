@@ -1,3 +1,5 @@
+@import "../assets/styles/_outline.scss";
+
 stay-list {
   display: flex;
   margin: 0 auto;
@@ -5,12 +7,15 @@ stay-list {
   column-count: 3;
 }
 
-// REVIEW TEMPORARY
-img {
-  width: 400px;
-  height: auto;
-  // margin: 30% 30%;
+mat-icon {
+  color: white;
+  vertical-align: top;
 }
 
-@media screen and (max-width: 1200px) {
+button {
+  margin: 30px 30px;
+  padding: 5px;
+  background-color: rgb(255, 56, 92);
+  border: none;
+  border-radius: 50px;
 }
